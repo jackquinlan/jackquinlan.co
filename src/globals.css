@@ -7,8 +7,6 @@
         --background: 0 0% 100%;
         --foreground: 240 10% 3.9%;
 
-        --sidebar: 0, 0%, 98%;
-
         --card: 0 0% 100%;
         --card-foreground: 240 10% 3.9%;
 
@@ -38,39 +36,6 @@
 
         --radius: 0.4rem;
     }
- 
-    .dark {
-        --background: 20 14.3% 4.1%;
-        --foreground: 0 0% 95%;
-        --sidebar: 225, 6%, 13%;
-
-        --card: 24 9.8% 10%;
-        --card-foreground: 0 0% 95%;
-
-        --popover: 0 0% 9%;
-        --popover-foreground: 0 0% 95%;
-
-        --primary: 0 0% 98%;
-        --primary-foreground: 240 5.9% 10%;
-
-        --secondary: 240 3.7% 15.9%;
-        --secondary-foreground: 0 0% 98%;
-
-        --muted: 0 0% 15%;
-        --muted-foreground: 240 5% 64.9%;
-
-        --accent: 12 6.5% 15.1%;
-        --accent-foreground: 0 0% 98%;
-
-        --destructive: 346.8 77.2% 49.8%;
-        --destructive-foreground: 355.7 100% 97.3%;
-
-        --border: 240 3.7% 15.9%;
-
-        --input: 240 3.7% 15.9%;
-
-        --ring: 346.8 77.2% 49.8%;
-    }
 }
 
 @layer base {
@@ -80,4 +45,10 @@
     body {
         @apply bg-background text-foreground;
     }
+    /**
+     * Update default highlight color
+     */
+    /* ::selection {
+        background-color: #d8b4fe;
+    } */
 }
